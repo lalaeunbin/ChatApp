@@ -1,8 +1,7 @@
 import { Image, StyleSheet, View, Pressable } from 'react-native'
 import React from 'react'
-import {AppText} from './AppText';
+import { AppText } from './AppText';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-//import { ListItem } from 'react-native-elements';
 
 export function ListItem({title, subTitle, image, ImageComponent, onPress}) {
     return (
@@ -16,6 +15,7 @@ export function ListItem({title, subTitle, image, ImageComponent, onPress}) {
                 <View style={styles.ownerHolder}>
                     <AppText inputText = {title} stylesLing ={styles.name} numberOfLines = {1} />
                     {subTitle && <AppText inputText={subTitle} stylesLing={styles.listing} noOfLines={2}/>}
+                
                 </View>
                 <MaterialCommunityIcons name= 'chevron-right' size={20} color='#000'/>
             </View>
@@ -23,6 +23,7 @@ export function ListItem({title, subTitle, image, ImageComponent, onPress}) {
     )
 }
 
+//import { ListItem } from 'react-native-elements';
 const styles = StyleSheet.create({
     container:{
         flexDirection: "row",

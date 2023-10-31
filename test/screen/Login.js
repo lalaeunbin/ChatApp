@@ -41,7 +41,7 @@ export default function Login({navigation}) {
                 />
                 <Button
                 title='Login'
-                onPress={loginUser}
+                onPress={() => navigation.navigate('Home')}
                 />
                 <Button
                 style={styles.btn}
