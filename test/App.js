@@ -23,9 +23,21 @@ export default function App() {
         />
         <Stack.Screen
         name='Home' component={Home}
+        options={{
+          headerBackVisible: false,
+          title: 'Active users',
+        headerTitleAlign: 'center',
+        headerTitleStyle: {fontWeight: '900'}
+      }}
         />
         <Stack.Screen
         name='Chat' component={Chat}
+        options={({route}) => ({
+          headerBackVisible: false,
+          title:route.params.name,
+          headerTitleStyle:{fontWeight: 'bold'},
+          headerTitleAlign: 'center'
+        })}
         />
 
       </Stack.Navigator>

@@ -20,7 +20,8 @@ export default function Register() {
                 avaterUrl: avater? avater: 'https://cdn-icons-png.flaticon.com/512/7542/7542670.png',
                 username,
                 password,
-                userUID
+                userUID,
+                email
             })
         })
         .then(() => console.log('succesful'))
